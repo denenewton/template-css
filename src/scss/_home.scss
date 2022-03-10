@@ -1,0 +1,96 @@
+.home .container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding-bottom: 15rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  background-image: linear-gradient(
+      180deg,
+      rgba(#131022, 0.88) 100%,
+      rgba(#3e4265, 0.8) 10%,
+      transparent 50%
+    ),
+    url(../../assets/img/pexels-startup-stock-photos-7096.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: cover;
+
+  box-shadow: 0 1.5rem 4rem rgba(#131022, 0.2);
+
+  .data-home {
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+    &-title {
+      color: var(--bs-purple);
+    }
+    &-description {
+      color: var(--bs-gray-500);
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    button {
+      margin-top: 3rem;
+    }
+    @include button(13rem, 4rem, 1.5rem)
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .home .container {
+    height: 100%;
+    background-size: 130%;
+    .data-home {
+      h1 {
+        font-size: 4.2rem;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .home .container {
+    height: 100%;
+    background-size: 200%;
+    padding-bottom: 15.5rem;
+    .data-home {
+      h1 {
+        font-size: 4rem;
+      }
+
+      &-description {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .home .container {
+    height: 100%;
+    background-size: 220%;
+    padding-bottom: 15.9rem;
+    .data-home {
+      h1 {
+        font-size: 3rem;
+      }
+
+      &-description {
+        font-size: 1.19rem;
+      }
+      button {
+        margin-top: 3.5rem;
+      }
+      @include button(12rem, 4rem, 1.35rem)
+    }
+  }
+}

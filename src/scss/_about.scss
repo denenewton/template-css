@@ -1,0 +1,30 @@
+.about {
+  .container {
+    .data {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 11rem 5rem;
+      max-width: 500rem;
+
+      h1,
+      p,
+      button {
+        align-self: center;
+        text-align: center;
+      }
+      h1{
+          font-size: 4rem;
+          font-weight: 600;
+      }
+      p {
+        font-size: 1.75rem;
+      }
+      @include button(14rem, 4rem, 1.5rem);
+      h1 {
+        margin-bottom: 2rem;
+      }
+      grid-template-columns: 100%;
+    }
+  }
+}

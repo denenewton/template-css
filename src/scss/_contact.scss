@@ -1,0 +1,47 @@
+@import 'utils';
+
+.container {
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem;
+  .contact {
+    &__form {
+      width: 40rem;
+      align-self: center;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-bottom: 5rem;
+    }
+    &__input,
+    &__textarea,
+    &__button {
+      width: inherit;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      outline: none;
+      font-size: 1.5rem;
+    }
+    &__input,
+    &__textarea {
+      border: 2px solid #fff;
+      color: var(--bs-gray-900);
+      &:focus {
+        border: 2px solid var(--bs-indigo);
+        color: var(--bs-indigo);
+        &::placeholder {
+          color: var(--bs-indigo);
+        }
+      }
+      &::placeholder {
+        color: var(--bs-gray-900);
+      }
+    }
+    &__textarea {
+      font-family: var(--font-family);
+      height: 15rem;
+    }
+    @include button(auto, 4rem, 1.5rem);
+  }
+}

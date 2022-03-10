@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px 5px rgba(#6f42c1, 1);
+  background-color: var(--bs-white);
+
+  p {
+    color: var(--bs-gray-800);
+    font-size: 1.225rem;
+    font-weight: 400;
+    letter-spacing: 0.105rem;
+  }
+  .arrow-up {
+    position: absolute;
+    cursor: pointer;
+    right: 2rem;
+    z-index: 10;
+    fill: var(--bs-purple);
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding-top: 7rem;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1144px;
+  height: 91vh;
+  padding: 5rem 0;
+  @media screen and (max-width: 1144px) {
+    padding: 5rem 2rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+}
+.bg-grid {
+  display: grid;
+}
+
+.active {
+  color: var(--nav-link-hover);
+}
+
+
+

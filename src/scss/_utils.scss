@@ -1,0 +1,16 @@
+@mixin button($width, $height, $font-size) {
+  &__button {
+    border: none;
+    height: $height;
+    width: $width;
+    background-color: var(--bs-indigo);
+    color: var(--bs-white);
+    transition: 0.2s ease;
+    border-radius: .5rem;
+    font-size:  $font-size;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--bs-purple);
+    }
+  }
+}

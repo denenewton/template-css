@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
+        <title>Template CSS</title>
+    </head>
+    <body>
+        <header class="header">
+
+            <nav class="nav">
+                <div class="nav__logo">
+                    <h1>LOGO</h1>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__icons">
+                    <box-icon type='logo' class="nav__icons-icon"
+                        name='instagram'></box-icon>
+                    <box-icon name='twitter' class="nav__icons-icon"
+                        type='logo'></box-icon>
+                    <box-icon name='facebook-square' class="nav__icons-icon"
+                        type='logo'></box-icon>
+                    <box-icon name='github' class="nav__icons-icon" type='logo'></box-icon>
+                </div>
+               
+            </nav>
+            <div class="header__menu">
+                <i class='bx bx-menu header__menu-icon'></i>
+            </div>
+
+        </header>
+        <main>
+            <section class="home" id="home">
+
+                <div class="container">
+              
+                        <div class="data-home">
+                            <h1>Learn <span class="data-home-title">IT Online</span> with No Limits</h1>
+                            <p class="data-home-description">Enjoy our great selection of IT courses. Choose from more than 25K online <br> video courses and become an IT expert now!</p>
+                            <button class="data-home__button"
+                            type="submit">Sign up now!</button>
+                        </div>
+             
+                </div>
+
+            </section>
+            <section class="about" id="about">
+
+                <div class="container bg-grid">
+                    <div class="data">
+                        <h1>Our Company</h1>
+                        <p>Enim, vulputate felis, pharetra, leo diam est morbi.
+                            Gravida porta nunc vitae tempor sit proin lobortis
+                            mauris nulla. Eget felis nec ultrices quis viverra
+                            aliquam aliquam. Eget vestibulum, orci, pulvinar diam.
+                            Ultrices tortor cursus porta magna sit blandit dolor,
+                            nulla a. Sit diam non donec et, in interdum.</p>
+                            <button class="data__button">Work with us</button>
+                    </div>
+                </div>
+
+            </section>
+            <section class="contact" id="contact">
+
+                <div class="container bg-grid">
+                    <h1>CONTACT</h1>
+                    <form action="" class="contact__form">
+                        <input type="text" class="contact__input"
+                            placeholder="Name">
+                        <input type="mail" class="contact__input"
+                            placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10"
+                            class="contact__textarea"
+                            placeholder="Message ..."></textarea>
+                        <button class="contact__button"
+                            type="submit">Enviar</button>
+                    </form>
+
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Denenewton all rights reserved </p>
+            <box-icon type='solid' name='up-arrow-circle' class="arrow-up"></box-icon>
+        </footer>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/boxicons.js"></script>
+    </body>
+</html>
